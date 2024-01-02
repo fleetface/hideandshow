@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="box" style="border: 2px solid black;">
+    <h1>
+        Hello
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore, vero exercitationem nulla atque ut accusamus saepe consequuntur eveniet mollitia similique delectus necessitatibus, et qui sit incidunt magnam dolor sequi?</p>
+</div>
+    <input type="button" value="hide" id="btn1">
+    <input type="button" value="show" id="btn2">
+
+<script>
+
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            $('#box').hide()
+        })
+
+        $('#btn2').click(function(){
+            $('#box').show()
+        })
+    })
+
+</script>
+    
+</body>
+</html>
